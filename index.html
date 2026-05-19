@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>+3 NGƯỜI DƯNG</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: "Segoe UI", sans-serif;
+    }
+
+    body{
+      background: linear-gradient(135deg,#ffecd2,#fcb69f);
+      min-height:100vh;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      padding:20px;
+    }
+
+    .card{
+      width:100%;
+      max-width:700px;
+      background:white;
+      border-radius:28px;
+      padding:40px;
+      box-shadow:0 15px 40px rgba(0,0,0,0.15);
+      position:relative;
+      overflow:hidden;
+      animation:float 4s ease-in-out infinite;
+    }
+
+    .top{
+      text-align:center;
+      margin-bottom:30px;
+    }
+
+    .top h1{
+      font-size:42px;
+      color:#ff5e57;
+      margin-bottom:10px;
+    }
+
+    .top p{
+      color:#666;
+      font-size:18px;
+    }
+
+    .emoji{
+      font-size:70px;
+      animation:bounce 1.5s infinite;
+      margin-bottom:12px;
+    }
+
+    .people{
+      display:flex;
+      justify-content:center;
+      gap:15px;
+      flex-wrap:wrap;
+      margin:25px 0;
+    }
+
+    .person{
+      background:#fff3ef;
+      padding:12px 18px;
+      border-radius:50px;
+      font-weight:bold;
+      color:#ff5e57;
+      border:2px dashed #ffb199;
+      transition:0.3s;
+    }
+
+    .person:hover{
+      transform:scale(1.08);
+    }
+
+    .content{
+      color:#444;
+      line-height:1.9;
+      text-align:center;
+      font-size:18px;
+      margin-bottom:28px;
+    }
+
+    .info{
+      background:#fff5f2;
+      border-radius:20px;
+      padding:24px;
+      border:2px dashed #ffb199;
+      margin-top:20px;
+    }
+
+    .info h3{
+      color:#ff5e57;
+      margin-bottom:10px;
+    }
+
+    .info p{
+      color:#444;
+      line-height:1.7;
+      margin-bottom:14px;
+    }
+
+    .footer{
+      margin-top:30px;
+      text-align:center;
+      font-size:22px;
+      font-weight:bold;
+      color:#ff5e57;
+    }
+
+    .sparkle{
+      position:absolute;
+      font-size:24px;
+      animation:spin 6s linear infinite;
+      opacity:0.7;
+    }
+
+    .s1{ top:20px; left:25px; }
+    .s2{ top:20px; right:25px; }
+    .s3{ bottom:20px; left:30px; }
+    .s4{ bottom:20px; right:30px; }
+
+    .btn{
+      margin-top:25px;
+      display:flex;
+      justify-content:center;
+    }
+
+    button{
+      border:none;
+      background:#ff5e57;
+      color:white;
+      padding:14px 24px;
+      border-radius:50px;
+      font-size:16px;
+      cursor:pointer;
+      transition:0.3s;
+      box-shadow:0 10px 20px rgba(0,0,0,0.15);
+    }
+
+    button:hover{
+      transform:scale(1.08);
+    }
+
+    @keyframes bounce{
+      0%,100%{ transform:translateY(0);}
+      50%{ transform:translateY(-10px);}
+    }
+
+    @keyframes spin{
+      from{ transform:rotate(0deg);}
+      to{ transform:rotate(360deg);}
+    }
+
+    @keyframes float{
+      0%,100%{ transform:translateY(0);}
+      50%{ transform:translateY(-6px);}
+    }
+	@keyframes dance{
+    0%{
+      transform:translateY(0) rotate(0deg);
+    }
+    25%{
+      transform:translateY(-10px) rotate(-3deg);
+    }
+    50%{
+      transform:translateY(0) rotate(3deg);
+    }
+    75%{
+      transform:translateY(-10px) rotate(-3deg);
+    }
+    100%{
+      transform:translateY(0) rotate(0deg);
+    }
+	@keyframes crazyDance{
+  0%{
+    transform:translateY(0) rotate(0deg) scale(1);
+  }
+
+  25%{
+    transform:translateY(-12px) rotate(-5deg) scale(1.05);
+  }
+
+  50%{
+    transform:translateY(0) rotate(5deg) scale(1.1);
+  }
+
+  75%{
+    transform:translateY(-12px) rotate(-5deg) scale(1.05);
+  }
+
+  100%{
+    transform:translateY(0) rotate(0deg) scale(1);
+  }
+}
+  }
+  </style>
+</head>
+
+<body>
+
+  <div class="card" id="card">
+
+    <div class="sparkle s1">✨</div>
+    <div class="sparkle s2">🍻</div>
+    <div class="sparkle s3">🔥</div>
+    <div class="sparkle s4">😂</div>
+
+    <div class="top">
+      <div class="emoji">🎉</div>
+      <h1>FEWARE ĐÊEEEEEEEEE</h1>
+      <p>Ăn nhiệt tình — Quẩy hết mình 🍺</p>
+    </div>
+
+    <div class="people">
+      <div class="person">🍻 TrangNTT240</div>
+      <div class="person">🔥 TuanLT37</div>
+      <div class="person">😂 TrungVT21</div>
+    </div>
+
+    <div class="content">
+      Sau bao ngày vất vả 💻⚔️<br><br>
+
+      Nay trân trọng mời các đồng chí đến tham dự đại tiệc:
+      <br><br>
+
+      <b>“ĂN HẾT MỒI - KỂ HẾT CHUYỆN CÔNG TY”</b>
+      <br><br>
+
+      Mục tiêu chương trình:
+      <br>🍺 Nhậu<br>
+    </div>
+
+    <div class="info">
+      <h3>📍 Địa điểm</h3>
+     <p>
+  <a 
+    href="https://maps.app.goo.gl/zupWF2yzNhwPtaKK6"
+    target="_blank"
+    style="
+      color:#ff5e57;
+      text-decoration:none;
+      font-weight:bold;
+    "
+  >
+    🚀 Warning Zone
+  </a>
+  <br>
+
+  33 Nguyễn Đình Chiểu,<br>
+  Phường Sài Gòn,<br>
+  Thành phố Hồ Chí Minh
+</p>
+
+      <h3>🕕 Thời gian</h3>
+      <p><b>18:00 — 21/05/2026</b></p>
+    </div>
+
+    <div class="footer">
+      Không đi = tuần sau bị réo tên 😎
+    </div>
+
+    <div class="btn">
+      <button onclick="partyMode()">
+        🎊 Bật chế độ quẩy
+      </button>
+    </div>
+
+  </div>
+
+  <script>
+  function partyMode(){
+
+    document.body.style.background =
+      "linear-gradient(135deg,#ff6a88,#ff99ac,#f6d365,#fda085)";
+
+    const oldGif = document.getElementById("party-gif");
+    if(oldGif) oldGif.remove();
+
+    // tạo GIF quẩy ở cả 4 góc màn hình
+const gifUrl = "https://media.giphy.com/media/blSTtZehjAZ8I/giphy.gif";
+
+// xoá gif cũ nếu có
+document.querySelectorAll(".corner-party").forEach(el => el.remove());
+
+const positions = [
+  { top: "20px", left: "20px" },
+  { top: "20px", right: "20px" },
+  { bottom: "20px", left: "20px" },
+  { bottom: "20px", right: "20px" }
+];
+
+positions.forEach((pos, index) => {
+
+  const gif = document.createElement("img");
+
+  gif.src = gifUrl;
+  gif.className = "corner-party";
+
+  gif.style.position = "fixed";
+  gif.style.width = "180px";
+  gif.style.zIndex = "9999";
+  gif.style.borderRadius = "20px";
+  gif.style.boxShadow = "0 10px 25px rgba(0,0,0,0.35)";
+  gif.style.animation = `crazyDance 0.6s infinite`;
+
+  Object.assign(gif.style, pos);
+
+  // xoay mỗi góc khác nhau cho hài
+  if(index === 1) gif.style.transform = "scaleX(-1)";
+  if(index === 2) gif.style.transform = "rotate(8deg)";
+  if(index === 3) gif.style.transform = "rotate(-8deg) scaleX(-1)";
+
+  document.body.appendChild(gif);
+});
+
+     // rung card nhẹ
+    const card = document.getElementById("card");
+
+    card.animate([
+      { transform: "rotate(-2deg)" },
+      { transform: "rotate(2deg)" },
+      { transform: "rotate(-2deg)" }
+    ], {
+      duration: 500,
+      iterations: 6
+    });
+  }
+</script>
+
+</body>
+</html>
